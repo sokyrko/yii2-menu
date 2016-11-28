@@ -8,13 +8,12 @@
 
 namespace sokyrko\yii2menu\models;
 
-use common\models\Menu;
 use yii\base\Model;
 use yii\db\ActiveQuery;
 
 /**
  * Class MenuSearch
- * @package backend\models
+ * @package sokyrko\yii2menu\models
  */
 class MenuSearch extends Model
 {

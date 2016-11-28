@@ -11,7 +11,7 @@ use yii\db\ActiveRecord;
 
 /**
  * Class Menu
- * @package common\models
+ * @package sokyrko\yii2menu\models
  * @property integer $id
  * @property string $name
  * @property MenuItem[] $items
