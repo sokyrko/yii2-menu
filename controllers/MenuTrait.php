@@ -23,7 +23,7 @@ use yii\web\Response;
 /**
  * @package sokyrko\yii2menu\controllers
  */
-class MenuTrait extends Controller
+trait MenuTrait
 {
 
     public function actionIndex()

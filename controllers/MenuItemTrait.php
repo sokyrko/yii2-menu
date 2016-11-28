@@ -21,7 +21,7 @@ use yii\web\Response;
 /**
  * @package sokyrko\yii2menu\controllers
  */
-class MenuItemTrait extends Controller
+trait MenuItemTrait
 {
     /**
      * @inheritdoc
