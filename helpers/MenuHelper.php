@@ -13,7 +13,7 @@ use yii\helpers\ArrayHelper;
 
 /**
  * Class MenuHelper
- * @package common\helpers
+ * @package sokyrko\yii2menu\helpers
  */
 class MenuHelper
 {
