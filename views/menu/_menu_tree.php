@@ -5,8 +5,7 @@
  * @var $currentItem MenuItem
  */
 
-
-use common\helpers\MenuHelper;
+use sokyrko\yii2menu\helpers\MenuHelper;
 use sokyrko\yii2menu\models\MenuItem;
 use yii\helpers\Url;
 

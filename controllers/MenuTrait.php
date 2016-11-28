@@ -13,15 +13,13 @@ use sokyrko\yii2menu\models\MenuItem;
 use sokyrko\yii2menu\models\MenuSearch;
 use yii\base\ErrorException;
 use yii\data\ActiveDataProvider;
-use yii\filters\AccessControl;
-use yii\filters\VerbFilter;
-use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\web\Response;
 
 /**
  * @package sokyrko\yii2menu\controllers
+ * @mixin Controller
  */
 trait MenuTrait
 {
