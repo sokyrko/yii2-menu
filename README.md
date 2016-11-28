@@ -26,6 +26,23 @@ Run migration
 ./yii migrate/up --migrationPath=@vendor/sokyrko/yii2-menu/migrations
 ```
 
+Create controllers and include menu and menu-item traits. For example:
+
+```php
+
+class MenuController extends Controller
+{
+    use MenuTrait;
+}
+```
+```php
+class MenuItemController extends Controller
+{
+    use MenuItemTrait;
+}
+
+```
+
 Usage
 -----
 
