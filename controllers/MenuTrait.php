@@ -29,7 +29,7 @@ trait MenuTrait
         $searchModel = new MenuSearch();
         $searchModel->load(\Yii::$app->request->queryParams);
 
-        return $this->render('index', [
+        return $this->render('@vendor/sokyrko/yii2-menu/views/menu/index', [
             'searchModel' => $searchModel,
             'dataProvider' => new ActiveDataProvider([
                 'query' => $searchModel->search(),
