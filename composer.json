@@ -1,0 +1,22 @@
+{
+    "name": "sokyrko/yii2-menu",
+    "description": "Yii2 module for menu creation.",
+    "type": "yii2-extension",
+    "keywords": ["yii2"," menu"," list creator"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "sokyrko",
+            "email": "wartwvister@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "kartik-v/yii2-sortable": "v1.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sokyrko\\yii2menu\\": ""
+        }
+    }
+}
