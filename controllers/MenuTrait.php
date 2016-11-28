@@ -47,7 +47,7 @@ trait MenuTrait
             return $this->redirect(['menu/index']);
         }
 
-        return $this->render('create', [
+        return $this->render('@vendor/sokyrko/yii2-menu/views/menu/create', [
             'model' => $model,
         ]);
     }
@@ -61,14 +61,14 @@ trait MenuTrait
             return $this->redirect(['menu/index']);
         }
 
-        return $this->render('update', [
+        return $this->render('@vendor/sokyrko/yii2-menu/views/menu/update', [
             'model' => $model,
         ]);
     }
 
     public function actionChildren($parentId)
     {
-        return $this->render('children', [
+        return $this->render('@vendor/sokyrko/yii2-menu/views/menu/children', [
             'parent' => $this->getItem($parentId),
         ]);
     }
