@@ -21,11 +21,34 @@ or add
 
 to the require section of your `composer.json` file.
 
+Run migration
+```
+./yii migrate/up --migrationPath=@vendor/sokyrko/yii2-menu/migrations
+```
 
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Minimal configuration:
 
 ```php
-<?= // todo ?>```
+<?= MenuWidget::widget([
+    'menuName' => 'main_footer',
+    'menuWrapper' => '<ul class="bottom-nav">{items}</ul>',
+]) ?>
+```
+
+Also you can define other settings:
+
+```php
+<?= MenuWidget::widget([
+    'menuName' => 'main_header',
+    'template' => function (MenuItem $current) {
+        return Html::tag('li', Html::a($current->title, $current->url) . '{children}', [
+            'class' => ($current->url == Url::to([''])) ? 'active' : '',
+        ]);
+    },
+    'menuWrapper' => '<nav class="nav-holder"><ul id="nav">{items}</ul></nav>',
+    'subMenuWrapper' => '<div class="drop"><ul>{items}</ul></div>',
+]) ?>
+```
