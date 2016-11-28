@@ -19,35 +19,10 @@ use yii\web\NotFoundHttpException;
 use yii\web\Response;
 
 /**
- * Class MenuItemController
- * @package backend\controllers
+ * @package sokyrko\yii2menu\controllers
  */
-class MenuItemController extends Controller
+class MenuItemTrait extends Controller
 {
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return ArrayHelper::merge(parent::behaviors(), [
-            'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['DELETE']
-                ],
-            ],
-        ]);
-    }
-
     /**
      * @inheritdoc
      */
