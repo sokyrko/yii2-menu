@@ -49,7 +49,7 @@ foreach ($menuItems as $menuItem) {
 
 Modal::begin([
     'id' => 'item-form',
-    'header' => 'New menu item',
+    'header' => 'New menu item for ' . $model->name,
 ]);
 
 echo $this->render('_item_form', [

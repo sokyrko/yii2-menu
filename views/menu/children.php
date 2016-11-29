@@ -32,6 +32,7 @@ $this->title = 'Update menu';
         ]) ?>
     </div>
     <div class="col-xs-12 col-md-3">
+        <p>Menu "<?= $parent->menu->name ?>"</p>
         <?= $this->render('_menu_tree', [
             'items' => $parent->menu->items,
             'currentItem' => $parent,
